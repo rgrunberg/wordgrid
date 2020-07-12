@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "46d74caebb4e156abcd78ab14ecaa514",
+    "revision": "3ab76420fe80f0c20466825241a05f06",
     "url": "/wordgrid/index.html"
   },
   {
-    "revision": "0530be2264576199a8ad",
-    "url": "/wordgrid/static/css/main.615bb1d3.chunk.css"
+    "revision": "c725c4af29885aba5ec8",
+    "url": "/wordgrid/static/css/main.afd34eb6.chunk.css"
   },
   {
     "revision": "983e44c63e85348b1000",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wordgrid/static/js/2.4f128868.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0530be2264576199a8ad",
-    "url": "/wordgrid/static/js/main.3fceb6a2.chunk.js"
+    "revision": "c725c4af29885aba5ec8",
+    "url": "/wordgrid/static/js/main.0dde4a62.chunk.js"
   },
   {
     "revision": "8d8ebabca6518ea08c61",
