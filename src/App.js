@@ -37,6 +37,7 @@ const randomLetter = (dieLetters) => {
 
 const getLetters = (gridSize) => {
   const shuffledDice = [...DICE];
+  shuffleArray(shuffledDice);
 
   const letters = [];
   for (let i = 0; i < gridSize; i++) {
