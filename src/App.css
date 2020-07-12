@@ -1,38 +1,205 @@
-.App {
-  text-align: center;
+:root {
+  --main-color: #282c34;
+  --contrast-color: white;
+  --faded-color: #6f7a90;
+  --timer-countdown-font: 42px;
+  --main-font: 24px;
+  --letter-square-font: 32px;
+  --letter-square-size: 62px;
+  --letter-square-margin: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  background-color: var(--main-color);
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: var(--contrast-color);
+  font-size: var(--main-font);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.color-light {
+  --main-color: white;
+  --contrast-color: #282c34;
+  --faded-color: #7d879b;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.size-auto {
+  --main-font: calc(10px + 2vmin);
+  --timer-countdown-font: calc(8vmin);
+  --letter-square-font: calc(8vmin);
+  --letter-square-size: calc(14vh);
+  --letter-square-margin: calc(1vh);
+}
+
+.size-small {
+  --main-font: 16px;
+  --timer-countdown-font: 24px;
+  --letter-square-font: 24px;
+  --letter-square-size: 40px;
+  --letter-square-margin: 3px;
+}
+
+.size-large {
+  --main-font: 32px;
+  --timer-countdown-font: 40px;
+  --letter-square-font: 64px;
+  --letter-square-size: 82px;
+  --letter-square-margin: 5px;
+}
+
+.letter-grid-container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.letter-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.letter-square {
+  border: 1px black solid;
+  border-radius: 5px;
+  background: var(--contrast-color);
+  color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: var(--letter-square-font);
+  height: var(--letter-square-size);
+  width: var(--letter-square-size);
+  margin: var(--letter-square-margin);
+}
+
+.game-controls {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  width: calc(var(--main-font) * 10);
+}
+
+.game-controls > * {
+  margin-bottom: var(--main-font);
+}
+
+.full-width {
+  display: block;
+  width: 100%;
+}
+
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--contrast-color);
+  width: 100%;
+}
+
+.timer-description {
+  padding-top: var(--main-font);
+}
+
+.timer-countdown {
+  font-size: var(--timer-countdown-font);
+  padding: var(--main-font) 0;
+}
+
+.timer-container.timer-done {
+  background-color: var(--contrast-color);
+  color: var(--main-color);
+}
+
+.timer-done .button {
+  border: 1px solid var(--main-color);
+  margin: -1px;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+.timer-done .button:hover {
+  color: var(--contrast-color);
+  background: var(--main-color);
+}
+
+.timer-button-row {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.timer-button-row .button {
+  flex: 1;
+  border-right: none;
+  margin: 0 0 -1px -1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button {
+  cursor: pointer;
+  padding: 5px 0;
+  border: 1px solid var(--contrast-color);
+  text-align: center;
+}
+.button:hover {
+  color: var(--main-color);
+  background: var(--contrast-color);
+}
+
+.color-selector {
+  display: flex;
+  font-size: 14px;
+  padding: 5px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.size-selector {
+  display: flex;
+  font-size: 14px;
+  padding: 5px;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+.setting-option {
+  color: var(--faded-color);
+  padding: 0 2px 0 3px;
+  cursor: pointer;
+}
+.setting-option:hover {
+  color: var(--contrast-color);
+}
+.setting-option--active {
+  color: var(--contrast-color);
+}
+
+.hint-text {
+  color: var(--faded-color);
+  font-size: calc(var(--main-font) * 0.8);
+  height: calc(var(--main-font) * 0.9);
+}
+
+.done-modal {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  margin-left: calc(var(--main-font) * -5);
+  top: 50%;
+  margin-top: calc(var(--main-font) * -2.5);
+  font-size: var(--letter-square-font);
+  width: calc(var(--main-font) * 10);
+  height: calc(var(--main-font) * 5);
+  background: var(--faded-color);
+  border-radius: 5px;
+  cursor: pointer;
 }
