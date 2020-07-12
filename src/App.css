@@ -9,12 +9,12 @@
   --letter-square-margin: 5px;
 }
 
-.body {
+body {
   background-color: var(--main-color);
 }
 
 .app {
-  background-color: var(--main-color);
+  height: 100vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -34,8 +34,8 @@
   --main-font: calc(10px + 2vmin);
   --timer-countdown-font: calc(8vmin);
   --letter-square-font: calc(8vmin);
-  --letter-square-size: calc(14vh);
-  --letter-square-margin: calc(1vh);
+  --letter-square-size: min(calc(14vh), 10vw);
+  --letter-square-margin: min(calc(1vh));
 }
 
 .size-small {
