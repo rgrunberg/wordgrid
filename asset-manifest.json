@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/wordgrid/static/css/main.615bb1d3.chunk.css",
+    "main.js": "/wordgrid/static/js/main.3fceb6a2.chunk.js",
+    "main.js.map": "/wordgrid/static/js/main.3fceb6a2.chunk.js.map",
+    "runtime-main.js": "/wordgrid/static/js/runtime-main.50d61006.js",
+    "runtime-main.js.map": "/wordgrid/static/js/runtime-main.50d61006.js.map",
+    "static/js/2.4f128868.chunk.js": "/wordgrid/static/js/2.4f128868.chunk.js",
+    "static/js/2.4f128868.chunk.js.map": "/wordgrid/static/js/2.4f128868.chunk.js.map",
+    "index.html": "/wordgrid/index.html",
+    "precache-manifest.7bf34d749e207d09fbb241b0f7f7925d.js": "/wordgrid/precache-manifest.7bf34d749e207d09fbb241b0f7f7925d.js",
+    "service-worker.js": "/wordgrid/service-worker.js",
+    "static/css/main.615bb1d3.chunk.css.map": "/wordgrid/static/css/main.615bb1d3.chunk.css.map",
+    "static/js/2.4f128868.chunk.js.LICENSE.txt": "/wordgrid/static/js/2.4f128868.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.50d61006.js",
+    "static/js/2.4f128868.chunk.js",
+    "static/css/main.615bb1d3.chunk.css",
+    "static/js/main.3fceb6a2.chunk.js"
+  ]
+}
