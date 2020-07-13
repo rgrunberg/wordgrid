@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cc555e407cd4f3a838d8bb8031dfdf27",
+    "revision": "7c3c82ceb45238ced06b09f3d11c7190",
     "url": "/wordgrid/index.html"
   },
   {
