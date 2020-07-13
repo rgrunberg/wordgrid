@@ -9,11 +9,8 @@
   --letter-square-margin: 5px;
 }
 
-body {
-  background-color: var(--main-color);
-}
-
 .app {
+  background-color: var(--main-color);
   height: 100vh;
   display: flex;
   flex-direction: row;
