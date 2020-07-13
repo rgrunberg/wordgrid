@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/wordgrid/static/css/main.768a8334.chunk.css",
+    "main.css": "/wordgrid/static/css/main.517ee738.chunk.css",
     "main.js": "/wordgrid/static/js/main.0dde4a62.chunk.js",
     "main.js.map": "/wordgrid/static/js/main.0dde4a62.chunk.js.map",
     "runtime-main.js": "/wordgrid/static/js/runtime-main.50d61006.js",
@@ -8,15 +8,15 @@
     "static/js/2.4f128868.chunk.js": "/wordgrid/static/js/2.4f128868.chunk.js",
     "static/js/2.4f128868.chunk.js.map": "/wordgrid/static/js/2.4f128868.chunk.js.map",
     "index.html": "/wordgrid/index.html",
-    "precache-manifest.0e6b60e5ab339bbb7206e2ca39686991.js": "/wordgrid/precache-manifest.0e6b60e5ab339bbb7206e2ca39686991.js",
+    "precache-manifest.e869398e697c923e558f1980fc05137a.js": "/wordgrid/precache-manifest.e869398e697c923e558f1980fc05137a.js",
     "service-worker.js": "/wordgrid/service-worker.js",
-    "static/css/main.768a8334.chunk.css.map": "/wordgrid/static/css/main.768a8334.chunk.css.map",
+    "static/css/main.517ee738.chunk.css.map": "/wordgrid/static/css/main.517ee738.chunk.css.map",
     "static/js/2.4f128868.chunk.js.LICENSE.txt": "/wordgrid/static/js/2.4f128868.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.50d61006.js",
     "static/js/2.4f128868.chunk.js",
-    "static/css/main.768a8334.chunk.css",
+    "static/css/main.517ee738.chunk.css",
     "static/js/main.0dde4a62.chunk.js"
   ]
 }
