@@ -1,1 +1,1 @@
-Available at https://rgrunberg.github.io/wordgrid
+Available at https://rgrunberg.github.io/wordgrid.
