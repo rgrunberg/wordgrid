@@ -23,6 +23,8 @@ const DICE = [
   "DEILRX",
 ];
 
+const ROTATIONS = [0, 90, 180, 270];
+
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -43,17 +45,18 @@ const getLetters = (gridSize) => {
   for (let i = 0; i < gridSize; i++) {
     const row = [];
     for (let j = 0; j < gridSize; j++) {
-      row.push(randomLetter(shuffledDice.pop()));
+      const rotation = ROTATIONS[Math.floor(Math.random() * ROTATIONS.length)];
+      row.push({letter: randomLetter(shuffledDice.pop()), rotation});
     }
     letters.push(row);
   }
   return letters;
 };
 
-const LetterSquare = ({ letter }) => {
+const LetterSquare = ({ letter, rotation }) => {
   return (
-    <div className="letter-square">
-      <a>{letter}</a>
+    <div className="letter-square" style={{ transform: `rotate(${rotation}deg)` }}>
+      <p>{letter}</p>
     </div>
   );
 };
@@ -62,7 +65,7 @@ const LetterRow = ({ letters, visible }) => {
   return (
     <div className="letter-row">
       {letters.map((letter, i) => (
-        <LetterSquare key={i} letter={visible ? letter : "?"} />
+        <LetterSquare key={i} letter={visible ? letter.letter : "?"} rotation={letter.rotation}/>
       ))}
     </div>
   );
@@ -90,7 +93,7 @@ const Countdown = ({ time }) => {
 
 const GameButton = ({ label, onClick, extraClass }) => {
   return (
-    <div className={"button" + " " + extraClass} onClick={onClick}>
+    <div className={"button " + extraClass} onClick={onClick}>
       {label}
     </div>
   );
