@@ -188,7 +188,7 @@ const GameControls = (props) => {
     <div className="game-controls">
       <Timer {...props} />
       <div className="hint-text">
-        {!props.lettersVisible && "letters will reveal on start"}
+        {!props.lettersVisible && "hello"}
       </div>
       <GameButton
         label="new game"
